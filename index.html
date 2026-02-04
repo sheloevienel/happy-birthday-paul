@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, Paul</title>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #e5e7eb;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      max-width: 700px;
+      background: #020617;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(56,189,248,0.3);
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #38bdf8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Happy Birthday, Paul 🎂</h1>
+    <p id="message"></p>
+  </div>
+
+<script>
+const text = `
+Happy birthday, Paul (H2Wo, JP especially my forever Aru)
+
+Gusto ko lang mag-thank you.
+Thank you sa lahat ng memories, sa mga kwentuhan, sa tawanan, at kahit sa mga simpleng moments na naging part ka ng buhay ko.
+
+Thank you din sa tulong mo, sa mga times na nandiyan ka, at sa mga pagkakataong hindi mo man alam, pero naka-help ka talaga.
+Minsan sapat na yung presence mo or yung mga sinabi mo para gumaan yung pakiramdam ko.
+
+Gusto ko rin mag-thank you sa pamilya mo—especially sa inyo ni Tita, at sa mga tita at pinsan mo na tinuring nila ako na parang pamilya na rin til now.
+Malaking bagay yun sa akin, and I’ll always be grateful for that.
+
+Marami akong natutunan along the way.
+May mga bagay na hindi madali, pero lahat yun may naituro sakin.
+Mas naging aware ako sa sarili ko at sa mga bagay na mahalaga, and I’m thankful for that.
+
+Gusto ko lang malaman mo na na-appreciate kita more than you know.
+Some people really come into our lives for a reason, and I’m grateful na naging part ka ng sakin.
+
+Sana maging masaya ka ngayong birthday mo.
+
+And just so you know,
+nandito lang ako whenever you need help or someone to talk to.
+
+Enjoy your day.
+Always wishing you well.
+`;
+
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("message").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 35);
+  }
+}
+typeWriter();
+</script>
+
+</body>
+</html>
